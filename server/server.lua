@@ -75,8 +75,8 @@ AddEventHandler('esx_holdupbank:rob', function(robb)
 
 		if rob == false then
 		
-			 if xPlayer.getInventoryItem('blowtorch').count >= 1 then
-				xPlayer.removeInventoryItem('blowtorch', 1)
+			 if xPlayer.getInventoryItem('blowpipe').count >= 1 then
+				xPlayer.removeInventoryItem('blowpipe', 1)
 
 				if(cops >= Config.NumberOfCopsRequired)then
 
@@ -211,8 +211,8 @@ AddEventHandler('esx_holdupbank:plantbomb', function(robb)
 
         if(cops >= Config.NumberOfCopsRequired)then
 
-			if xPlayer.getInventoryItem('c4_bank').count >= 1 then
-				xPlayer.removeInventoryItem('c4_bank', 1)
+			if xPlayer.getInventoryItem('c4').count >= 1 then
+				xPlayer.removeInventoryItem('c4', 1)
 				for i=1, #xPlayers, 1 do
 				local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
 					if xPlayer.job.name == 'police' then
